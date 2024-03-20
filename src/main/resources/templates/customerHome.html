@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TuneHub</title>
+<link rel="stylesheet" th:href="@{/css/customerStyle.css}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="icon" href="https://github.com/Bhavana01234/clips/blob/main/Icon.png?raw=true">
+</head>
+<body>
+<h1>Customer Home</h1>
+	<div th:unless="${isPremium}" class="non-premium">
+
+		<a href="pay" class="gp">GET PREMIUM</a>
+		<br>
+		<a href="logout" class="lo">LOGOUT</a>
+	</div>
+	<div th:if="${isPremium}" class="premium">
+		<table border>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Artist</th>
+				<th>Genre</th>
+				<th>Play</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="song:${songs}">
+				<td th:text="${song.name}"></td>
+				<td th:text="${song.artist}"></td>
+				<td th:text="${song.genre}"></td>
+				<td>
+					<audio controls><source th:src="${song.link}" type="audio/mpeg"></audio>
+				</td>
+			</tr>
+		</tbody>
+		</table>
+	
+	</div>
+</body>
+</html>

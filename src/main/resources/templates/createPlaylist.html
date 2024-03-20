@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TuneHub</title>
+<link rel="stylesheet" th:href="@{/css/createPlay.css}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="icon" href="https://github.com/Bhavana01234/clips/blob/main/Icon.png?raw=true">
+</head>
+<body>
+<h1>Create PlayList</h1>
+<form action="addPlaylist" method="post">
+<label>PlayList Name : </label>
+<input type="text" name="name" required="required">
+<br>
+
+<div th:each="song:${songs}">
+<input type="checkbox" th:name="songs" th:value="${song.id}"><label th:text="${song.name}"></label>
+
+</div>
+
+<input type="submit" value="ADD PLAYLIST">
+</form>
+
+</body>
+</html>

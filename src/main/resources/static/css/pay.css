@@ -1,0 +1,67 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://github.com/Bhavana01234/clips/blob/main/Background%202.jpeg?raw=true");
+    background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+div {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1{
+	position:absolute;
+	top:10px;
+	color:white;
+	text-align: center;
+	font-size: 40px;
+	font-family:"Montserrat", sans-serif;
+}
+
+
+h6 {
+    font-size: 26px;
+    color: white;
+    margin-bottom: 10px;
+    position: absolute;
+	top:27%;
+	left:43%;
+}
+
+p {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#payment-form {
+    text-align: center;
+}
+
+.buy-button {
+    background-color: #5bc0de;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color:white;
+    font-family:"Montserrat", sans-serif;
+}
+
+.buy-button:hover {
+    background-color: #0077B6;
+}

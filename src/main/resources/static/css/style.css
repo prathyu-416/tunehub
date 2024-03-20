@@ -1,0 +1,70 @@
+
+html,body{
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://github.com/Bhavana01234/clips/blob/main/Background%202.jpeg?raw=true");
+    background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+h1{
+	position:absolute;
+	top:10px;
+	color:white;
+	text-align: center;
+	font-size: 170px;
+	font-family:"Montserrat", sans-serif;
+}
+h5{
+	color:white;
+	text-align: center;
+	font-size:50px;
+	position: absolute;
+	top:35%;
+	left:20%;
+	font-family: cursive;
+}
+
+
+.btn {
+	display:inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+ 	background-color:#5bc0de;
+ 	transition: background-color 0.3s ease;
+  	color: white;
+    border-radius: 5px;
+    position: absolute;
+  	bottom: 15%;
+  	left: 35%;
+  	font-family:"Montserrat", sans-serif;
+  	font-size:20px;
+}
+
+.btn:hover {
+    background-color:#0077B6;
+}
+.btn1 {
+	display:inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+  	background-color: #5bc0de;
+  	transition: background-color 0.3s ease;
+  	color: white;
+    border-radius: 5px;
+    position: absolute;
+  	bottom: 15%;
+  	left: 55%;
+  	font-family:"Montserrat", sans-serif;
+  	font-size:20px;
+}
+
+.btn1:hover {
+    background-color: #0077B6;
+}

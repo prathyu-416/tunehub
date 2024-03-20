@@ -1,0 +1,85 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://github.com/Bhavana01234/clips/blob/main/Background%202.jpeg?raw=true");
+    background-size: cover;
+    color: white;
+}
+h1 {
+    color: white;
+    text-align: center;
+    position: absolute;
+	top:3%;
+	left:45%;
+	font-size:40px;
+	font-family:"Montserrat", sans-serif;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; 
+    background-color: rgba(0, 0, 0, 0);
+    color:white;
+}
+
+th, td {
+    border: 1px solid #ddd; 
+    padding: 5px; 
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter:blur(3px);
+    font-weight: bolder;
+    font-size:18px;
+}
+
+th {
+    background-color: #5bc0de; 
+    color: white;
+    text-align:center;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px; 
+}
+
+audio {
+    width: 100%; 
+}
+
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block; 
+    }
+    
+    th, td {
+        text-align: center; 
+    }
+    
+    tr {
+        border-bottom: 1px solid #ddd; 
+        margin-bottom: 10px;
+    }
+    
+    td:before {
+        content: attr(data-label); 
+        font-weight: bold; 
+        display: inline-block;
+        width: 50%; 
+    }
+}

@@ -1,0 +1,117 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://github.com/Bhavana01234/clips/blob/main/Background%202.jpeg?raw=true");
+    background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+h1{
+	position:absolute;
+	top:10px;
+	color:white;
+	text-align: center;
+	font-size: 40px;
+	font-family:"Montserrat", sans-serif;
+}
+
+
+.non-premium {
+    max-width: 400px;
+    margin: 20px auto; /* Center the non-premium section horizontally */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0);
+    color:white;
+    font-family:"Montserrat", sans-serif;
+    font-size:20px;
+    font-weight: bolder;
+}
+
+.premium {
+    max-width: 800px;
+    margin: 20px auto; /* Center the premium section horizontally */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    background-color: rgba(0, 0, 0, 0);
+    font-family:"Montserrat", sans-serif;
+    font-size:20px;
+    font-weight: bolder;
+}
+
+.gp {
+	display:inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+ 	background-color:#5bc0de;
+ 	transition: background-color 0.3s ease;
+  	color: white;
+    border-radius: 5px;
+    position: absolute;
+  	bottom: 15%;
+  	left: 35%;
+  	font-family:"Montserrat", sans-serif;
+  	font-size:20px;
+}
+
+.gp:hover {
+    background-color: #0077B6; 
+}
+.lo{
+		display:inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+  	background-color: #5bc0de;
+  	transition: background-color 0.3s ease;
+  	color: white;
+    border-radius: 5px;
+    position: absolute;
+  	bottom: 15%;
+  	left: 55%;
+  	font-family:"Montserrat", sans-serif;
+  	font-size:20px;
+}
+.lo:hover{
+	background-color: #0077B6;
+}
+table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse table borders */
+    margin-top: 20px; 
+    background-color: rgba(0, 0, 0, 0);
+    color:white;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Border color for table cells */
+    padding: 8px; /* Padding for table cells */
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter:blur(3px);
+    font-size:20px;
+    font-weight: bolder;
+}
+
+th {
+    background-color: #5bc0de; 
+    color: white;
+    text-align:center;
+}
+th:nth-child(4), td:nth-child(4) {
+    width: 30%; 
+}
+
+
+audio {
+    width: 100%; 
+}
